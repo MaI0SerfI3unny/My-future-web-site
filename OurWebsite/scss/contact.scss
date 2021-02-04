@@ -1,0 +1,35 @@
+@import "style";
+
+.contact-main{
+  background-color: white;
+}
+
+input{
+  @include container_size(400px,50px);
+  padding-left: 10px;
+  &:last-child{
+    padding-left: $Null;
+    margin-top: 1rem;
+    @include container_size(150px,40px);
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    border: none;
+    &:hover{
+      background-color: black;
+      transition: 0.6s;
+      cursor: pointer;
+    }
+  }
+}
+
+.contact{
+  width: 50%;
+}
+
+@media (max-width:1080px) {
+  body{
+    min-width: 1079px;
+  }
+}
